@@ -7,6 +7,10 @@ local function giveStarterPack(src, packKey)
     local pack = Config.StarterPacks[packKey]
     if not pack then return end
 
+    if pack.horses then
+        TriggerClientEvent('dfa-starterpack:client:GiveHorse', src, Player, pack.horses.stable, pack.horses.model, pack.horses.gender, pack.horses.active)
+    end
+
     Player.Functions.RemoveItem(packKey, 1)
 
     if pack.items then
@@ -19,7 +23,7 @@ local function giveStarterPack(src, packKey)
         Player.Functions.AddMoney(pack.money.type, pack.money.amount)
     end
 
-        lib.notify(src, { title = 'You have Used '..pack.name, type = 'success' })
+    lib.notify(src, { title = 'You have Used ' .. pack.name, type = 'success' })
 end
 
 for packKey, _ in pairs(Config.StarterPacks) do
