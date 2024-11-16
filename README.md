@@ -25,7 +25,7 @@
         } 
     },
 ```
-
+Above is the guide to create new item
 
 ### Check Out Our Tebex Store
 **Looking for more scripts to enhance your RedM experience? Visit our Tebex store to explore our full collection of scripts!**
