@@ -2,30 +2,39 @@
 [![preview](https://img.youtube.com/vi/s9tePJI7oMQ/0.jpg)](https://www.youtube.com/watch?v=s9tePJI7oMQ)
 
 
-## How To Add New Items. (GUIDE)
 ```lua
-    ['starter_box_hunter'] = { -- item name
-        name = 'Hunter Pack',
-        giveItems = true, -- true / false
-
+    ['starter_box_hunter'] = {   --- ITEM NAME 
+        name = 'Starter Pack Hunter',
+        giveItems = true,
         items = {
-            { name = 'meat', amount = 10 }, --Name: item name | Amount: how much money you want to give
-            { name = 'ammo_rifle', amount = 100 }, --Name: item name | Amount: how much money you want to give
-            { name = 'weapon_bow', amount = 1 } --Name: item name | Amount: how much money you want to give
+            { name = 'bread', amount = 5 },
+            { name = 'water', amount = 3 },
+            { name = 'ammo_arrow', amount = 30 },
+            { name = 'weapon_bow', amount = 1 }
         },
 
-        giveMoney = false, -- true / false
-        money = { type = 'cash', amount = 0 } --Type: cash / bloodmoney / bank / valbank / rhobank / blkbank / armbank | Amount: how much money you want to give
-        givehorse = true, -- true / false
+        giveMoney = true,
+        money = { type = 'cash', amount = 100 },
+
+        givehorse = true,
+        givehorsechance = 50, -- if you want to disable this change it to nil
         horses = {
-            stable = 'valentine', -- colter / vanhorn / rhodes / strawberry / blackwater / tumbleweed / valentine
-            model = 'A_C_Horse_Shire_RavenBlack', -- any horse model https://redlookup.com/peds/?p=1&s=horse
-            gender = 'female', -- Male / Female
-            active = true -- true / false if false they will have to go to stable 
+            {
+                stable = 'valentine',
+                model = 'A_C_Horse_Shire_RavenBlack',
+                gender = 'female',
+                active = true
+            },
+            {
+                stable = 'valentine',
+                model = 'A_C_Horse_Shire_RavenBlack',
+                gender = 'female',
+                active = true
+            },
         } 
     },
 ```
-Above is the guide to create new item
+
 
 ### Check Out Our Tebex Store
 **Looking for more scripts to enhance your RedM experience? Visit our Tebex store to explore our full collection of scripts!**
