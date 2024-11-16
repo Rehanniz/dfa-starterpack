@@ -2,6 +2,7 @@
 [![preview](https://img.youtube.com/vi/s9tePJI7oMQ/0.jpg)](https://www.youtube.com/watch?v=s9tePJI7oMQ)
 
 
+## How To Create New Item ( GUIDE )
 ```lua
     ['starter_box_hunter'] = {   --- ITEM NAME 
         name = 'Starter Pack Hunter',
